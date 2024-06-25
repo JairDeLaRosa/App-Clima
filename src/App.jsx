@@ -12,7 +12,7 @@ function App() {
   const loadInfo=async (city='london') => {
     try {
       const response = await axios.get(
-       `http://api.weatherapi.com/v1/current.json?key=28697ecaeced4c29895214255242006&q=${city}&aqi=no`
+       `https://api.weatherapi.com/v1/current.json?key=28697ecaeced4c29895214255242006&q=${city}&aqi=no`
       );
       console.log(response.data)
       setData(response.data);
