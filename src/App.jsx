@@ -39,8 +39,10 @@ function App() {
   return (
     <>
     <p>By: Jair De La Rosa</p>
+    <div className='app'>
     <WeatherForm onChangeCity={handleChangeCity}/>
     {error?<Error/>:<Info data={data}/>}
+    </div>
     
     </>
   )

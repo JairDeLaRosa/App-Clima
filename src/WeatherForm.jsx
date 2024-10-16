@@ -10,11 +10,11 @@ export const WeatherForm = ({onChangeCity}) => {
     
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="pt-4">
       <div className="container weatherForm">
         <h3>Digite la ciudad</h3>
         <div className="input row">
-          <div className="col-9">
+          <div className="col-9" style={{paddingLeft: "0"}}>
             <input
               type="text"
               className="form-control"

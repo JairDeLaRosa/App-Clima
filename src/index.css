@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .weatherForm{
-    margin-top: 2vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .input{
     margin-top: 5px;
-    width: 40vw;
+    width: 60%;
 }
 body{
-    background-image: url('./assets/XHqB.gif'); /* Ruta de la imagen */
-      background-size: cover; /* Ajusta la imagen para cubrir el elemento */
-      background-position: center; /* Centra la imagen */
+      overflow-x: hidden;
+      background-image: url('./assets/XHqB.gif'); 
+      background-size: cover;
+      background-position: center; 
       background-repeat: no-repeat; 
+      width: 100vw;
+      height: 100vh;
 }
 .info{
-    margin-top: 2vh;
+    padding-top: 3vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 iframe{
-    width: 40vw;
+    width: 100%;
 }
 h4{
     font-family: "Roboto", sans-serif;
@@ -30,37 +33,44 @@ h4{
     color: rgb(236, 236, 236);
 }
 .information{
-    width: 40vw;
-    height: 8vw;
+    width: 60%;
+    height: 180px;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
+    padding: 10px 0 20px 0;
+    justify-content: center;
     flex-direction: column;
+    background-color: rgba(10, 9, 9, 0.582);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon{
-    width: 80px;
+    width: 6rem;
+    
 }
 .infoIcon{
     display: flex;
     flex-direction: row;
 }
 .gradosYtext{
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
     color: rgb(255, 184, 118);
 }
 .grados{
-   font-size: 25px;
+   font-size: 1.7rem;
 }
 .fechaHora{
     display: flex;
     flex-direction: row;
     margin-top: -10px;
 }
+.mapa{
+    width: 60%;
+    margin-top: 20px;
+}
 h5{
-    margin-left: 50px;
-    margin-right: 50px;
-
     color: rgb(42, 247, 230);
 }
 h3{
@@ -74,4 +84,28 @@ p{
     color: aliceblue;
     position: fixed;
     margin-left: 20px;
+}
+
+@media (max-width: 400px){
+    h5{
+        font-size: 15px;
+    }
+}
+@media (max-width: 770px){
+    .information{
+        width: 90%;
+    }
+    .input{
+        width: 90%;
+    }
+    .mapa{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media (max-height: 870px){
+    body{
+        height: auto;
+        padding-bottom: 30px;
+    }
 }
